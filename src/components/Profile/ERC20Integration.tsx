@@ -61,7 +61,7 @@ export const ERC20Integration: React.FC<ERC20IntegrationProps> = (props: ERC20In
       render: (address: string) => address,
     },
   ];
-  debugger;
+
   return (
     <Skeleton loading={!assets}>
       <Table
