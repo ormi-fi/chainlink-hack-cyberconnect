@@ -1,20 +1,5 @@
-This is an example application that uses [CyberConnect API](https://docs.cyberconnect.me/), based on [Next.js](https://nextjs.org/).
-
-Deployed to https://cyberconnect-start.netlify.app/ via [Netlify](https://www.netlify.com/)
-
-Fork it freely.
-
-## Features
-
-This app includes two features:
-
-#### 1. follow/unfollow
-
-The app allows the current user to search a wallet address and follow/unfollow it.
-
-#### 2. followings/followers list
-
-The app displays the current user followings and followers list.
+# Ormi Reputation Oracle Interface
+User would be able to query reputation associated with an address on any chain.
 
 ## Getting Started
 
