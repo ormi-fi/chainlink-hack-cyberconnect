@@ -6,6 +6,7 @@ import { ReputationScoreIntegration } from "./ReputationScoreIntegration";
 import { useWeb3 } from "@/context/web3Context";
 import { Search } from "../Search/Search";
 import { useSearchContext } from "@/hooks/useSearch";
+import { POAPList } from "./POAPList";
 
 export const ReputationContent: React.FC = () => {
   const { address, network } = useSearchContext();
@@ -18,6 +19,7 @@ export const ReputationContent: React.FC = () => {
           <Box>
             ERC20 integration
             <ERC20Integration chain={network} address={address} />
+            <POAPList chain={network} address={address} />
           </Box>
         </Box>
       </Grid>
@@ -41,18 +43,6 @@ export const ReputationContent: React.FC = () => {
       <Grid item xs={6} md={4}>
         <Box sx={{ width: 200, height: 200, backgroundColor: "primary.main" }}>
           Github verification
-        </Box>
-      </Grid>
-
-      <Grid item xs={6} md={4}>
-        <Box sx={{ width: 200, height: 200, backgroundColor: "primary.main" }}>
-          NFT collections
-        </Box>
-      </Grid>
-
-      <Grid item xs={6} md={4}>
-        <Box sx={{ width: 200, height: 200, backgroundColor: "primary.main" }}>
-          POAP integration
         </Box>
       </Grid>
     </Grid>
